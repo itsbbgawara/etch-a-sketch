@@ -15,7 +15,7 @@ function createCanvas(newSize) {
     for (i = 1; i <= newSize * newSize; i++) {
         const createGrid = document.createElement('div');
         createGrid.classList.add('cell');
-        //createGrid.style.border = "0.5px solid rgb(200, 200, 200)";
+        createGrid.style.border = "0.5px solid rgb(200, 200, 200)";
         createGrid.style.backgroundColor = 'white';
         canvas.appendChild(createGrid);
     }
