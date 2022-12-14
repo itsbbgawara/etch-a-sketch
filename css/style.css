@@ -1,6 +1,9 @@
 .canvas {
     width: 45vw;
     height: 45vw;
+    margin: auto;
+    border: 5px solid var(--main-color);
+    border-radius: 10px;
 }
   
 .cell:hover {
