@@ -1,3 +1,4 @@
+const activeButton = document.querySelectorAll('.button-active');
 const canvas = document.querySelector('.canvas');
 const defaultBtn = document.getElementById('default');
 const randomsBtn = document.getElementById('randoms');
@@ -93,3 +94,18 @@ resetBtn.addEventListener('click', function () {
         cell.style.backgroundColor = 'white';
     });
 });
+
+function setActiveButton() {
+    if (activeButton) {
+        activeButton.forEach((setButton) => {
+            setButton.addEventListener('click', (e) => {
+                activeButton.forEach((setButton) => {
+                    setButton.classList.remove('is-active');
+                });
+                e.preventDefault();
+                setButton.classList.add('is-active');
+            });
+        });
+    }
+};
+setActiveButton();
