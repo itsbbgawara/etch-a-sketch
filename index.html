@@ -4,9 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Etch-A-Sketch</title>
 </head>
 <body>
-    
+    <button id="default" class="button">Black</button>
+    <button id="randoms" class="button">Random Color</button>
+    <button id="eraser" class="button">Eraser</button>
+    <button id="reset" class="button">Reset</button>
+    <div class="slider">
+        <input type="range" value="16" min="1" max="100" id="grid-size" />
+    </div>
+    <div class="canvas"></div>
+    <script src="./js/etch-a-sketch.js"></script>
 </body>
 </html>
