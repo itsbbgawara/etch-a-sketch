@@ -1,8 +1,8 @@
 @import "https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css";
 
 .canvas {
-    width: 40vw;
-    height: 40vw;
+    width: 35vw;
+    height: 35vw;
     margin: auto;
     border: 5px solid var(--main-color);
     border-radius: 10px;
@@ -12,14 +12,14 @@
     background-color: rgb(157, 220, 223) !important;
 }
 
-.slider {
+/*.slider {
   font-size: 23px;
   text-align: center;
-  padding-top: 15px;
-  padding-bottom: 15px;
-}
+  padding-top: 3px;
+  padding-bottom: 3px;
+}*/
 
 input[type="range"] {
   position: relative;
-  width: 40%;
+  width: 100%;
 }
