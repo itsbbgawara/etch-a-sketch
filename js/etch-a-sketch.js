@@ -1,11 +1,24 @@
-// Select the elements on the page - canvas, shake button
+const canvas = document.querySelector('.canvas');
+const defaultBtn = document.getElementById('default');
+const randomsBtn = document.getElementById('randoms');
+const eraserBtn = document.getElementById('eraser');
+const resetBtn = document.getElementById('reset');
+let pickColor = [];
+let color = [];
+let gridSize = document.getElementById('grid-size');
+let currentState = false;
 
-// set up our canvas for drawing
-
-// write a draw function
-
-// write a handler for the keys
-
-// clear or shake function
-
-// listen for arrow keys
+function createCanvas(newSize) {
+    canvas.style.display = 'grid';
+    canvas.style.gridTemplateColumns = `repeat(${newSize}, 1fr)`;
+    canvas.style.gridTemplateRows = `repeat(${newSize}, 1fr)`;
+    for (i = 1; i <= newSize * newSize; i++) {
+        const createGrid = document.createElement('div');
+        createGrid.classList.add('cell');
+        createGrid.style.border = "0.5px solid rgb(200, 200, 200)";
+        createGrid.style.backgroundColor = 'white';
+        canvas.appendChild(createGrid);
+    }
+    canvas.addEventListener('click', getColor);
+};
+createCanvas(16);
